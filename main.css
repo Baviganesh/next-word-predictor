@@ -1,0 +1,146 @@
+html {
+    --black: #32383c;
+    --green: #00cc07;
+    --lgt-green: #66ff6b;
+    --drk-green: #009905;
+    --red: #ff0000;
+    --lgt-red: #ff6666;
+    --drk-red: #990000;
+    --orange: #ff8000;
+    --lgt-orange: #ffb366;
+    --drk-orange: #994d00;
+  }
+  
+  .no-outline:focus {
+    outline: none;
+  }
+        
+  .column {
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    padding-bottom: 10px;
+  }
+  
+  .column1 {
+    display: inline-block;
+    font-size: 20px;
+    margin: -1px -1px;
+    padding: 5px;
+    width: 180px;
+    border-style: solid;
+  }
+  
+  #rc0 {
+    color: #fff;
+    background-color: var(--green);
+  }
+  
+  #rc0:hover {
+    color: #000;
+    background-color: var(--lgt-green);
+    border-color: var(--lgt-green);
+  }
+  
+  #rc0:active {
+    color: #000;
+    background-color: var(--drk-green);
+    border-color: var(--drk-green);
+  }
+  
+  #rc0:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
+  }
+  
+  #rc1 {
+    color: #fff;
+    background-color: var(--orange);
+  }
+  
+  #rc1:hover {
+    color: #000;
+    background-color: var(--lgt-orange);
+    border-color: var(--lgt-orange);
+  }
+  
+  #rc1:active {
+    color: #000;
+    background-color: var(--drk-orange);
+    border-color: var(--drk-orange);
+  }
+  
+  #rc1:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
+  }
+  
+  #rc2 {
+    color: #fff;
+    background-color: var(--red);
+  }
+  
+  #rc2:hover {
+    color: #000;
+    background-color: var(--lgt-red);
+    border-color: var(--lgt-red);
+  }
+  
+  #rc2:active {
+    color: #000;
+    background-color: var(--drk-red);
+    border-color: var(--drk-red);
+  }
+  
+  #rc2:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
+  }
+  
+  .button {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .wrapper {
+    margin-inline:auto;
+    width:600px;
+  }
+  
+  .main{
+    text-align:center;
+    margin: 40px 2px;
+    word-wrap: break-word;
+  }
+  
+  .app {
+    border-style: solid;
+    border-radius: 12px;
+    min-height: 250px;
+  }
+  
+  .app1 {
+    text-align:center;
+    word-wrap: break-word;
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .thead{
+    position: sticky;
+    top: 0px;
+  }
+  
+  #pText {
+    width: 80%;
+  }
+  .header {
+    background-color:gray;
+  }

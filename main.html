@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Next Word Predictor App</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="main">
+		<div class="app">
+			<h1>Next Word Prediction</h1>
+			<div>
+				<textarea id="pText" name="typing" rows="4" cols="50"></textarea><br>
+			</div>
+			<div id="predict" style="display:none">
+				<h2>Word recommendation with accuracy percentage.</h2>
+				<h3>Click on the word below that you need to select</h3>
+				<div>
+					<div class="column">
+						<div id="rc0" class="button"></div>
+						<div id="ac0"></div>
+					</div>
+					<div class="column">
+						<div id="rc1" class="button"></div>
+						<div id="ac1"></div>
+					</div>
+					<div class="column">
+						<div id="rc2" class="button"></div>
+						<div id="ac2"></div>
+					</div>
+				</div>
+			</div>
+			<div id="nopredict" style="display:none">
+				<h2>Cannot Predict Word, Please keep typing and I will provide help.</h2>
+			</div>
+		</div>
+		<div>
+			<h3>Note: You can press full-stop to complete the sentence.</h3>
+		</div>
+		<div class="app1" id="excel">
+
+		</div>
+	</div>
+</div>
+</body>
+<script>
+	getExcel()
+
+	document.getElementById("rc0").onclick = function() {setValue(this)};
+	document.getElementById("rc1").onclick = function() {setValue(this)};
+	document.getElementById("rc2").onclick = function() {setValue(this)};
+
+	document.getElementById("pText").onkeydown = function(event) {
+		if(isCall && event.keyCode == 32){
+			document.getElementById("pText").value = document.getElementById("pText").value.trim();
+		}
+	};
+	document.getElementById("pText").onkeyup = function(event) {processData(event)};
+</script>
+</html>
